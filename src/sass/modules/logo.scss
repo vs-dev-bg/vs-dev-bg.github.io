@@ -1,0 +1,40 @@
+.logo {
+    width: 250px;
+    margin: 5% auto 0;
+    border: 5px solid $darkGray;
+    background: url($logo) 0px -69px no-repeat $black;
+    padding: 25px;
+    text-align: center;
+
+    &.win {
+        color: $white;
+        font-size: 26px;
+        padding: 10px 25px;
+        font-weight: bold;
+        -webkit-animation-name: example; /* Chrome, Safari, Opera */
+        -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+        -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+        animation-name: example;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+
+@-webkit-keyframes example {
+    from{
+        background: $black;
+    }
+    to {
+        background: $vividRed;
+    }
+}
+
+@keyframes example {
+    from{
+        background: $black;
+    }
+    to {
+        background: $vividRed;
+    }
+}

@@ -1,0 +1,222 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: rgba(222,222,222,1);
+    background: -moz-linear-gradient(45deg, rgba(222,222,222,1) 14%, rgba(218,218,218,1) 25%, rgba(214,214,214,1) 34%, rgba(204,204,204,1) 54%, rgba(227,227,227,1) 77%, rgba(250,250,250,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(222,222,222,1) 14%, rgba(218,218,218,1) 25%, rgba(214,214,214,1) 34%, rgba(204,204,204,1) 54%, rgba(227,227,227,1) 77%, rgba(250,250,250,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(222,222,222,1) 14%, rgba(218,218,218,1) 25%, rgba(214,214,214,1) 34%, rgba(204,204,204,1) 54%, rgba(227,227,227,1) 77%, rgba(250,250,250,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(222,222,222,1) 14%, rgba(218,218,218,1) 25%, rgba(214,214,214,1) 34%, rgba(204,204,204,1) 54%, rgba(227,227,227,1) 77%, rgba(250,250,250,1) 100%);
+    background: linear-gradient(45deg, rgba(222,222,222,1) 14%, rgba(218,218,218,1) 25%, rgba(214,214,214,1) 34%, rgba(204,204,204,1) 54%, rgba(227,227,227,1) 77%, rgba(250,250,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#fafafa', GradientType=1 );
+}
+
+#wrapper {
+    margin: 5% auto 0;
+
+    .win-title {
+        margin: 7% auto 1%;
+        width: 145px;
+        font-family: $krinkesDecorFontFamily;
+        font-size: 35px;
+    }
+
+    .win-chart {
+        margin: 0 auto;
+        height: 200px;
+        width: 400px;
+        border: outset 8px $darkGray;
+        border-radius: 6px;
+        -webkit-box-shadow: -1px 2px 30px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 2px 30px rgba(0,0,0,0.75);
+        box-shadow: -1px 2px 30px rgba(0,0,0,0.75);
+
+        .table {
+            display: flex;
+            flex-direction: row;
+            border-radius: 6px;
+            margin-left: -2px;
+            margin-top: -1px;
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+            background: $white;
+
+            .column {
+                @extend %flex-item;
+                display: flex;
+                flex-direction: column;
+                border-right: 1px solid $lightGray;
+
+                &:last-of-type {
+                    border-right: none;
+                }
+
+                &.active {
+                    background: $seaGreen;;
+                }
+
+                .row {
+                    flex: 3;
+                    border-bottom: 1px solid $lightGray;
+                    padding: 0 8px;
+
+                    &:first-child {
+                        @extend %flex-item;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    &:last-child {
+                        display: flex;
+                        flex-direction: column;
+                        border-bottom: none;
+                        background-color: white;
+
+                        li {
+
+
+                        }
+                    }
+                }
+
+                &:first-child {
+                    .row {
+                        &:last-child {
+                            li {
+                                @extend %ico;
+
+                                &:nth-child(1) {
+                                    @extend %icon-clover;
+                                }
+                                &:nth-child(2) {
+                                    @extend %icon-clover;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %icon-clover;
+                                    padding-bottom: 8px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .row {
+                        &:last-child {
+                            li {
+                                @extend %ico;
+
+                                &:nth-child(1) {
+                                    @extend %icon-watermelon;
+                                }
+                                &:nth-child(2) {
+                                    @extend %icon-watermelon;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %icon-watermelon;
+                                    padding-bottom: 5px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .row {
+                        &:last-child {
+                            li {
+                                @extend %ico;
+
+                                &:nth-child(1) {
+                                    @extend %icon-bell;
+                                }
+                                &:nth-child(2) {
+                                    @extend %icon-bell;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %icon-bell;
+                                    padding-bottom: 7px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .row {
+                        &:last-child {
+                            li {
+                                @extend %ico;
+
+                                &:nth-child(1) {
+                                    @extend %icon-cherry;
+                                }
+                                &:nth-child(2) {
+                                    @extend %icon-cherry;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %icon-cherry;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    .row {
+                        &:last-child {
+                            li {
+                                @extend %ico;
+
+                                &:nth-child(1) {
+                                    @extend %icon-diamond;
+                                }
+                                &:nth-child(2) {
+                                    @extend %icon-diamond;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %icon-diamond;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &:last-child {
+                    .row {
+                        &:last-child {
+                            li {
+                                @extend %ico;
+
+                                &:nth-child(1) {
+                                    @extend %icon-seven;
+                                }
+                                &:nth-child(2) {
+                                    @extend %icon-seven;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %icon-seven;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

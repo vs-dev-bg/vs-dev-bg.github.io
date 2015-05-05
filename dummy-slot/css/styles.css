@@ -210,16 +210,22 @@ button {
   font-family: 'Digital', 'Segoe UI', Arial, sans-serif;
   text-align: right; }
   #numbers div {
-    height: 20px;
+    height: 17px;
     padding-right: 5px;
     border: 2px solid #a4a4a4; }
   #numbers .score {
     flex: 2;
-    width: 100px; }
+    width: 100px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;}
   #numbers .stake {
     margin-left: 5%;
     width: 50px;
-    flex: 1; }
+    flex: 1;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;}
   #numbers .info {
     color: gold;
     margin-left: 1%;
